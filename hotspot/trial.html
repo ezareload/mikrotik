@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no"> 
+   <meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gratis</title> 
+    <link rel="stylesheet" href="style.css">
+<script>
+    function openLogin() {
+	if (window.name != 'hotspot_logout') return true;
+	open('$(link-login)', '_blank', '');
+	window.close();
+	return false;
+    }
+</script>
+  </head>
+  <body>
+    
+    <div class="page-content-wrapper">
+      <div class="container">
+        <div class="offline-area-wrapper py-3 d-flex align-items-center justify-content-center">
+          <div class="offline-text text-center"><img class="mb-4 px-5" src="http://1.bp.blogspot.com/-Yu49uq51QcI/YPWhUghODlI/AAAAAAAASc4/4ldlE1l1Vdoz4pIYe5xlMD45P7CABOsngCNcBGAsYHQ/s320/sad.png" alt="">
+		  $(if trial == 'yes')
+            <h5 class="text-danger">Klik Tombol di Bawah Untuk Melanjutkan</h5>
+            <a class="btn btn-primary" href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">Gratis</a>
+			 $(else)
+			 <h5 class="text-danger">Maaf, Gratis hari ini sudah habis</h5>
+			 <a class="btn btn-primary" href="login.html">Kembali</a>
+			 $(endif)
+           </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="conf.js"></script>  
+  </body>
+</html>

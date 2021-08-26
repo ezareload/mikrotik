@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Status EzaraloadNet</title> 
+  <script type="text/javascript" src="js/custom.js"></script>
+ <link rel="stylesheet" href="css/tambahan.css">
+    <link rel="stylesheet" href="style.css">
+    <script language="JavaScript">
+$(if advert-pending == 'yes')
+    var popup = '';
+    function focusAdvert() {
+  if (window.focus) popup.focus();
+    }
+    function openAdvert() {
+  popup = open('$(link-advert)', 'hotspot_advert', '');
+  setTimeout("focusAdvert()", 1000);
+    }
+$(endif)
+    function openLogout() {
+  if (window.name != 'hotspot_status') return true;
+        open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+  window.close();
+  return false;
+    }
+</script>
+<style>
+.button2 {
+  background-color: white; 
+  height: 37px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #0091EA;
+}
+.button2:hover {
+  background-color: #0091EA;
+  color: white;
+}
+  iframe  {
+  height: 24px;
+  width: 80%;
+  }
+  </style>
+  </head>
+  <body $(if advert-pending == 'yes')  onLoad="openAdvert()" $(endif) > 
+  <div class="header-area" id="headerArea">
+      <div class="container h-100 d-flex align-items-center justify-content-between">
+
+        <!-- Nama di bagian atas / header -->
+        <div class="logo-wrapper"><span class="logo mb-1 text-success">$(username)</span></div> <span class="btn btn-success btn-sm">Terhubung</span>
+ <!-- Akhir nama di bagian atas / header -->
+
+           <div class="single-settings d-flex align-items-center justify-content-between">
+                <div class="title"><i class="lni lni-night"></i><span></span></div>
+                <div class="data-content">
+                  <div class="toggle-button-cover">
+                    <div class="button r">
+                      <input class="checkbox" id="ganti" type="checkbox">
+                      <div class="knobs"></div>
+                      <div class="layer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+           </div> 
+          </div>      
+     <div class="page-content-wrapper">
+      <div class="hero-slides owl-carousel">
+        <div class="single-hero-slide" style="background-image: url('http://file.ezareload.com/slid4.png')">
+        </div>
+        <div class="single-hero-slide" style="background-image: url('http://file.ezareload.com/slid5.png')">
+        </div>
+        <div class="single-hero-slide" style="background-image: url('http://file.ezareload.com/slid6.png')">
+        </div>
+        <div class="single-hero-slide" style="background-image: url('http://file.ezareload.com/slid7.png')">
+        </div>
+        <div class="single-hero-slide" style="background-image: url('http://file.ezareload.com/slid8.png')">
+        </div>
+      </div>
+      <div class="product-catagories-wrapper py-2">
+        <div class="container">
+                    <div class="section-heading">    
+              
+   <div class="flash-sale-slide owl-carousel">
+            <div class="card flash-sale-card">
+              <div class="card-body"><span class="product-title">Paket 5 jam</span>
+                  <p class="sale-price">Rp.1.000</p><span class="progress-title"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div></div>
+            </div>
+            <div class="card flash-sale-card">
+              <div class="card-body"><span class="product-title">Paket 24 jam</span>
+                  <p class="sale-price">Rp.2.000</p><span class="progress-title"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div></div>
+            </div>
+            <div class="card flash-sale-card">
+              <div class="card-body"><span class="product-title">Paket 1 minggu</span>
+                  <p class="sale-price">Rp.10.000</p><span class="progress-title"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div></div>
+            </div>
+            <div class="card flash-sale-card">
+              <div class="card-body"><span class="product-title">Paket 1 bulan</span>
+                  <p class="sale-price">Rp.35.000</p><span class="progress-title"></span>
+                  <!-- Progress Bar-->
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+             </div>
+            </div>             
+            </div> 
+ <div class="product-catagory-wrap">
+            <div class="row g-3">
+              <div class="col-4">
+                <div class="card catagory-card">
+              <div class="card-body"><img src="http://file.ezareload.com/upload.png" class="icon" alt=""><i class="lni lni"></i><span>Upload<br><strong>$(bytes-in-nice)</strong></span></div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card catagory-card">
+                  <div class="card-body"><img src="http://file.ezareload.com/download.png" class="icon" alt=""><i class="lni lni"></i><span>Download<br><strong>$(bytes-out-nice)</strong></span></div>
+                </div>  
+               </div>
+
+              <div class="col-4">
+                <div class="card catagory-card">
+                  <div class="card-body"><img src="http://file.ezareload.com/ip.png" class="icon" alt=""><i class="lni lni"></i><span>Ip User<br><strong>$(ip)</strong></span></div>
+                </div>  
+               </div>   
+            </div>
+        </div>
+    </div> 
+    $(if login-by != 'trial')
+    <div class="featured-products-wrapper py-3">
+        <div class="container">
+           <div class="section-heading d-flex align-items-center justify-content-between">
+            <h6 class="pl-1">Masa Aktif Voucher</h6><button class="button button2"><iframe frameborder="0" scrolling="no" src="https://mikhmon.ezareload.com/status/status.php?name=$(username)&session=ezareload"></iframe></button>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card featured-product-card">
+                <div class="card-body"><span class="badge badge-success">Help</span>
+              
+                  <div class="product-description"><a class="product-title d-block" href="help.html">Perlu bantuan?</a>
+                    <p class="sale-price">Menu pusat bantuan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card featured-product-card"><a href="https://www.elreload.top/p/pendaftaran.html">
+                <div class="card-body"><span class="badge badge-success">Bisnis</span>
+                  <div class="product-description"><p class="product-title d-block">Mau Jadi Agen Pulsa</p></a>
+                    <p class="sale-price">Daftar Gratis...!!!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+     $(endif)
+
+    $(if session-time-left)
+<div class="featured-products-wrapper py-3">
+        <div class="container">
+           <div class="section-heading d-flex align-items-center justify-content-between">
+            <h6 class="pl-1">Sisa Waktu Gratis</h6><button class="button button2">$(session-time-left)</button>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card featured-product-card">
+                <div class="card-body"><span class="badge badge-success">Help</span>
+              
+                  <div class="product-description"><a class="product-title d-block" href="help.html">Perlu bantuan?</a>
+                    <p class="sale-price">Menu pusat bantuan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card featured-product-card"><a href="https://www.elreload.top/p/pendaftaran.html">
+                <div class="card-body"><span class="badge badge-success">Bisnis</span>
+                  <div class="product-description"><p class="product-title d-block">Mau Jadi Agen Pulsa</p></a>
+                    <p class="sale-price">Daftar Gratis...!!!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+     $(endif)
+    <div class="footer-nav-area" id="footerNav">
+      <div class="container h-100 px-0">
+        <div class="apay-footer-nav h-100">
+          <ul class="h-100 d-flex align-items-center justify-content-between pl-0">                             
+            <li><a href="about.html"><img src="http://file.ezareload.com/info.png" class="icon1" alt=""><i class="lni lni-hear"></i>Tentang Kami</a></li>
+             <li><a href="outlet.html"><img src="http://file.ezareload.com/outlet.png" class="icon1" alt=""><i class="lni lni-hear"></i>0utlet kami</a></li>
+            <li><a href="chat.html"><img src="http://file.ezareload.com/chat.png" class="icon1" alt=""><i class="lni lni"></i>Live Chat</a></li> 
+            <li><a href="$(link-logout)" name="logout" onSubmit="return openLogout()"><img src="http://file.ezareload.com/logout.png" class="icon1" alt=""><i class="lni lni-shopping-baske"></i>Logout</a></li>
+        
+            </ul>
+        </div>
+      </div>
+    </div> 
+  <audio id="play" autoplay loop> <source src="https://dhost.my.id/play.mp3"  type="audio/mp3"> 
+</audio>  
+   <script>
+var myaudio = document.getElementById("play");
+
+function PlayStop() { 
+return myaudio.paused ? myaudio.play() : myaudio.pause();
+};
+   </script> 
+
+ <!-- All JavaScript Files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/default/ganti.js"></script>
+    <script src="js/default/active.js"></script>
+</body>
+</html>

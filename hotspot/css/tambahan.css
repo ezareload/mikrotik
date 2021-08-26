@@ -1,0 +1,127 @@
+#JadwalSholat {
+    display: none
+}
+
+#timetable {
+    margin: 0;
+    text-align: center;
+    font-size: 14px
+}
+
+#timetable td,#timetable th {
+    border-width: 0;
+    border-spacing: 0;
+    padding: 8px;
+    font-size: 12px
+}
+
+#timetable td {
+    display: table-cell;
+    margin-top: 5px;
+    vertical-align: inherit;
+    text-align: center
+}
+
+#timetable th {
+    color: #000;
+    *text-align: center
+}
+
+.icon,.logo {
+    height: 40px
+}
+
+.icon {
+    width: 40px;
+    z-index: 100
+}
+
+.icon1,.icon2 {
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+    margin-left: 10px
+}
+
+.icon2 {
+    width: 55px;
+    height: 55px;
+    margin-left: 0
+}
+
+.icon3 {
+    width: 20px;
+    height: 20px;
+    z-index: 100
+}
+
+#play {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #add8e6;
+    margin-top: 20px
+}
+
+.orange {
+    background-color: coral;
+    border-radius: .75rem;
+    color: #fff
+}
+
+.flash-sale-orange {
+    position: relative;
+    z-index: 1
+}
+
+.flash-sale-card img {
+    margin-bottom: .5rem
+}
+
+.flash-sale-card .product-title {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+    line-height: 1.2;
+    margin-bottom: .25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.flash-sale-orange .sale-price {
+    font-size: 13px;
+    font-weight: 300;
+    color: #ff;
+    margin-bottom: 0
+}
+
+.flash-sale-orange .real-price {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-bottom: .25rem
+}
+
+.flash-sale-orange .progres {
+    height: .25rem
+}
+
+.flash-sale-orange .progres-judul {
+    color: #747794;
+    font-size: 12px;
+    display: block
+}
+
+.flash-sale-card:focus .product-title,.flash-sale-orange:hover .product-title {
+    color: #100dd1
+}
+Show transformations log
+Original:   2507 bytes
+Compressed: 1422 bytes (56.72%)
+Saving:     1085 bytes (43.28%)
+Time:       129 ms

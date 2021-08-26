@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Selamat Datang Di Jaringan Hotspot EZA RELOAD Net</title> 
+	<script type="text/javascript" src="js/custom.js"></script>
+ <link rel="stylesheet" href="css/tambahan.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onClick="Play()"> 
+ <!-- script login form -->
+  $(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+ <!-- Akhir script login form -->
+<div class="header-area" id="headerArea">
+      <div class="container h-100 d-flex align-items-center justify-content-between">
+
+        <!-- Nama di bagian atas / header -->
+         <div class="logo-wrapper"><img src="http://1.bp.blogspot.com/-fhYRdU54HkU/YPdkB2MtLmI/AAAAAAAASgA/zA-Kr1sVXjMuQx7QHTeW3OAsm-TsnJs3gCNcBGAsYHQ/s320/logo5.png" class="logo mb-1"></div> 
+ <!-- Akhir nama di bagian atas / header -->
+
+           <div class="single-settings d-flex align-items-center justify-content-between">
+                <div class="title"><i class="lni lni-night"></i><span></span></div>
+                <div class="data-content">
+                  <div class="toggle-button-cover">
+                    <div class="button r">
+                      <input class="checkbox" id="ganti" type="checkbox">
+                      <div class="knobs"></div>
+                      <div class="layer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+           </div> 
+          </div> 
+    <div class="page-content-wrapper">
+      <div class="hero-slides owl-carousel">
+        <div class="single-hero-slide" style="background-image: url('http://file.ezareload.com/slid4.png')">
+        </div>
+        <div class="single-hero-slide" style="background-image: url('http://file.ezareload.com/slid5.png')">
+        </div>
+        <div class="single-hero-slide" style="background-image: url('http://file.ezareload.com/slid6.png')">
+        </div>
+        <div class="single-hero-slide" style="background-image: url('http://file.ezareload.com/slid7.png')">
+        </div>
+        <div class="single-hero-slide" style="background-image: url('http://file.ezareload.com/slid8.png')">
+        </div>
+      </div>
+	  <!-- form untuk login-->
+      <div class="product-catagories-wrapper py-2">
+        <div class="container">
+          <div class="section-heading">             
+              <div class="apply-coupon">
+                <h6 class="mb-0">Punya Voucher?</h6>
+                <div class=" mb-3 coupon-form ">
+                 <form name="login" action="$(link-login-only)" method="post"
+					    $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+                    <input class="form-control" id="username" name="username" type="text" placeholder="Masukan kode voucher disini" value="$(username)" />
+<input id="password" name="password" type="hidden"/>
+                    <button class="btn btn-primary" type="submit">VERIFIKASI</button>
+                  </form>
+                </div>
+<!-- Notifikasi erorn -->
+    <center>
+    <div id="error" class='error'>
+     <script type="text/javascript">
+     var error="$(error)";
+     if(error=="credit limit reached"){
+      document.write('<div class="alert alert-danger"><i class="icon-attention-circled"></i>Batas kredit user <b>$(username)</b> sudah habis</div>');
+      }
+     else if(error=="uptime limit reached"){
+      document.write('<div class="alert alert-danger"><i class="icon-attention-circled"></i>Masa aktif user <b>$(username)</b> sudah habis</div>');
+      }
+     else if(error=="download limit reached"){
+      document.write('<div class="alert alert-danger"><i class="icon-attention-circled"></i>Kuota user <b>$(username)</b> telah habis</div>');
+      }
+     else if(error=="no valid profile found"){
+      document.write('<div class="alert alert-danger"><i class="icon-attention-circled"></i>Masa aktif user <b>$(username)</b> telah habis</div>');
+      }
+     else if(error=="invalid password"){
+      document.write('<div class="alert alert-danger"><i class="icon-attention-circled"></i>username / password tidak valid!</div>');
+      }
+     else if(error=="simultaneous session limit reached") {
+      document.write('<div class="alert alert-danger"><i class="icon-attention-circled"></i>User <b>$(username)</b> sudah login di device lain</div>');
+      }
+     else if(error){
+      document.write('<div class="alert alert-danger"><i class="icon-attention-circled"></i>$(error)</div>');
+     }
+     </script>
+    </div>
+    <!--p class="mb-2" style="color:red">$(if error) $(error) $(endif)
+    </center></p-->
+<!-- akhir notifikasi login-->
+          </div>
+		 <!-- Menu -->
+  <div class="product-catagory-wrap">
+            <div class="row g-3">
+              <div class="col-4">
+                <div class="card catagory-card">
+              <div class="card-body">
+  <a href="trial.html"><img src="http://1.bp.blogspot.com/-y1NlWgpaW4A/YPWhi8SGQvI/AAAAAAAASdU/JDh8DjqjOEAPKDQ43wN3wODGAr0d-1hHgCNcBGAsYHQ/s0/free.png" class="icon"><i class=""></i><span>Gratis<br>10 Menit</span></a></div>
+                </div>
+              </div>
+              <div class="col-4">  
+                <div class="card catagory-card">
+                  <div class="card-body"><a href="member.html"><img src="http://1.bp.blogspot.com/-_oOuXgU5k_4/YPWhj2HwMgI/AAAAAAAASdw/YYq9AV8_KgEqc_-6ekd7phwGNmDzKxNnACNcBGAsYHQ/s0/member.png" class="icon"><i class=""></i><span>Login<br>Member</span></a></div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card catagory-card">
+                  <div class="card-body"><a onclick="window.location='http://laksa19.github.io/myqr';"><img src="http://1.bp.blogspot.com/-BL8kuRuSXSM/YPWhiAe93kI/AAAAAAAASdI/EoGyoPXcPe0E814WM6PmPFcPRYjfhlvPQCNcBGAsYHQ/s0/barcode.png" class="icon"><i class=""></i><span>Login<br>Barcode</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--div class="card discount-coupon-card border-0"> 
+          <div class="card-body"> 
+            <div class="coupon-text-wrap d-flex align-items-center p-3"> 
+              <h5 class="text-white pr-3 mb-0">Promo</h5> 
+              <p class="text-white pl-3 mb-0">Tukar 10 voucher bekas pakai jadi <strong class="px-1">Gratis 5 jam</strong> unlimited kuota data.</p>
+            </div> 
+          </div> 
+        </div>
+        <div class="section-heading d-flex align-items-center justify-content-between">
+            <h6 class="pl-1">Promo Gratis 5 Jam</h6><p class="btn btn-success btn-sm" ><a href="promo.html"><b style="color: #fff;">Selengkapnya</b></a></p> <p class="btn btn-danger btn-sm" id="exp"></p>
+          </div-->
+      </div>
+    </div> 
+          <div class="container">
+                  <div class="flash-sale-slide owl-carousel">
+            <!-- Single Flash Sale Card-->
+            <div class="card flash-sale-card">
+              <div class="card-body"><span class="product-title">Paket 5 jam</span>
+                  <p class="sale-price">Rp. 1.000</p><span class="progress-title"></span>
+                  <!-- Progress Bar-->
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+            </div> <!-- Single Flash Sale Card-->
+            <div class="card flash-sale-card">
+              <div class="card-body"><span class="product-title">Paket 24 jam</span>
+                  <p class="sale-price">Rp. 2.000</p><span class="progress-title"></span>
+                  <!-- Progress Bar-->
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+            </div>
+             <!-- Single Flash Sale Card-->
+            <div class="card flash-sale-card">
+              <div class="card-body"><span class="product-title">Paket 1 minggu</span>
+                  <p class="sale-price">Rp. 10.000</p><span class="progress-title"></span>
+                  <!-- Progress Bar-->
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Single Flash Sale Card-->
+            <div class="card flash-sale-card">
+              <div class="card-body"><span class="product-title">Paket 1 bulan</span>
+                  <p class="sale-price">Rp. 35.000</p><span class="progress-title"></span>
+                  <!-- Progress Bar-->
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+             </div>
+            </div>
+          </div>
+              <!-- Featured Products Wrapper-->
+    <div class="featured-products-wrapper py-3">
+       <div class="container">
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card featured-product-card">
+                <div class="card-body"><span class="badge badge-success">Help</span>
+              
+                  <div class="product-description"><a class="product-title d-block" href="help.html">Perlu bantuan?</a>
+                    <p class="sale-price">Menu pusat bantuan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card featured-product-card"><a href="https://www.elreload.top/p/pendaftaran.html">
+                <div class="card-body"><span class="badge badge-success">Bisnis</span>
+                  <div class="product-description"><p class="product-title d-block">Mau Jadi Agen Pulsa</p></a>
+                    <p class="sale-price">Daftar Gratis...!!!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+     <div class="toast pwa-install-alert shadow" id="pwaInstallToast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="7000" data-autohide="true">
+      <div class="toast-body">
+        <button class="ml-3 close" type="button" data-dismiss="toast" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="content d-flex align-items-center mb-2">
+          <h6 class="mb-0 text-white">Selamat datang kembali</h6>
+        </div><span class="mb-0 d-block text-white">Halo pelanggan setia <strong class="mx-1">Anda belum terhubung </strong>Silahkan gunakan voucher untuk login, atau klik member untuk anda pengguna voucher dan password.</span>
+      </div>
+    </div>  <br />
+  </div>
+</div>
+      </div> 
+    <div class="footer-nav-area" id="footerNav">
+      <div class="container h-100 px-0">
+        <div class="apay-footer-nav h-100"> 
+          <ul class="h-100 d-flex align-items-center justify-content-between pl-0">                             
+            <li><a href="about.html"><img src="http://1.bp.blogspot.com/-TIiZ83AD7iE/YPWhjCja8MI/AAAAAAAASdc/BQknCGZBvCkOHomZn3XAD0QMVT4Xy9S7QCNcBGAsYHQ/s0/info.png" class="icon1"> <i class=""></i> Tentang Kami</a></li>
+            <li><a href="outlet.html"><img src="http://1.bp.blogspot.com/-s6hQpShEwNI/YPWjzxG6ZSI/AAAAAAAASeo/BnVPWeOxwUALV5W7bwApZ9yPAl9AxwgEACNcBGAsYHQ/s0/store.png" class="icon1"> <i class=""></i> Outlet Kami</a></li>
+            <li><a href="chat.html"><img src="http://1.bp.blogspot.com/-oNn3FsCMxmk/YPWkXDaO5WI/AAAAAAAASew/wfVvH-pfvDUF2xwRkx3tA26_H80lR72ogCNcBGAsYHQ/s0/chat.png" class="icon1"><i class=""> </i> Live Chat</a></li> 
+            <li><a href="help.html"><img src="http://1.bp.blogspot.com/-aEFl9DmYYCc/YPWlXdtkXHI/AAAAAAAASe4/Y_O0c6BFyQY-_tJlZsypPi_DGUs2lvywgCNcBGAsYHQ/s0/bantu.png" class="icon1"><i class=""></i> Help</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>  </div>
+    </div>  
+  <audio id="Audio" src="https://file.ezareload.com/surgamu.mp3"></audio>
+   <script type="text/javascript">
+var myAudio = document.getElementById("Audio");
+var isPlaying = false;
+function Play() {
+    myAudio.play();
+    terakhir = document.querySelector('#box');
+ terakhir.classList.add('hide');
+    
+};
+
+</script>   
+	<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+  <!-- Additional Script -->
+  <script type="text/javascript">
+	var input1 = document.getElementById('username');
+	var input2 = document.getElementById('password');
+	var updateInputs = function () {
+	input2.value = input1.value;
+	}
+	if (input1.addEventListener) {
+	input1.addEventListener('keyup', function () {
+	updateInputs();
+	});
+	} else if (input1.attachEvent) { // support IE
+	input1.attachEvent('onkeyup', function () {
+	updateInputs();
+	});
+	}
+	</script>
+ <!-- All JavaScript Files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/default/ganti.js"></script>
+    <script src="js/default/active.js"></script>
+</body>
+</html>

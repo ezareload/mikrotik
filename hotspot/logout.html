@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no"> 
+   <meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Logout</title> 
+    <link rel="stylesheet" href="style.css">
+<script>
+    function openLogin() {
+	if (window.name != 'hotspot_logout') return true;
+	open('$(link-login)', '_blank', '');
+	window.close();
+	return false;
+    }
+</script>
+  </head>
+  <body>
+    
+    <div class="page-content-wrapper">
+      <div class="container">
+        <div class="offline-area-wrapper py-3 d-flex align-items-center justify-content-center">
+          <div class="offline-text text-center"><img class="mb-4 px-5" src="http://1.bp.blogspot.com/-98vcuO1GNZc/YPWhUpHIkBI/AAAAAAAASc0/MoENEApU4SMLLF6R6xgDCM_lXEXpjlr9ACNcBGAsYHQ/s320/logout.png" alt="">
+            <h5 class="text-danger">Kamu telah logout!</h5>
+            <p>koneksi terputus kamu telah logout dari layanan kami, silahkan klik login kembali untuk menikmati layanan!</p><a class="btn btn-primary" href="$(link-login)">Login kembali</a>
+           </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="conf.js"></script>  
+  </body>
+</html>
