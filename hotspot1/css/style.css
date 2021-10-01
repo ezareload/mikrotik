@@ -94,7 +94,7 @@ transition: 0.3s;margin-top:5px;border-radius:100%;padding:0px 4px;}
 .alert .closebtn {margin-right: 10px;color: white;font-weight: ;float: left;font-size: 15px;cursor: pointer;
 transition: 0.3s;margin-top:5px;background:red;border-radius:100%;padding:0px 4px;}
 .alert a{float:right;display:block;padding:5px 10px;color:#fff;
-text-decoration:none;background:#0064d3;border-radius:5px;margin-top:2px;font-size:12px;;}
+text-decoration:none;background:#ffffff;border-radius:5px;margin-top:2px;font-size:12px;;}
 .tbltatus{width:90%;margin:5px auto;margin-top:20px;overflow:hidden;border:0px}
 .ucul{display:block;padding:4px 0px;overflow:hidden;}
 .ucul a{background:#595DD1;padding:3px 10px;border-radius:4px;color:#fff}
@@ -528,7 +528,7 @@ a.primary.ghost {
   .dropdown-content a {color: black;padding: 7px 16px;text-decoration: none;display: block;}
   .dropdown:hover .dropdown-content {display: block;}
   .cls{display:block;}
-  .navbarmini1{display:block;width:100%;overflow:;background:#0064d3;padding:10px 0px;border:0px;}
+  .navbarmini1{display:block;width:100%;overflow:;background:#ffffff;padding:10px 0px;border:0px;}
   .navbarmini1 img{width:150px;margin-left:10px;float:}
   div.tab-label{display:block;margin-top:30px;}
   .tab-label label {padding:9px 0px;outline:none;font-size:15px;}
