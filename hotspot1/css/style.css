@@ -71,19 +71,6 @@ body{font-family: 'Pragati Narrow', sans-serif;font-size:14px;margin:0;font-weig
 font-family: Montserrat, sans-serif;
  }
 
-table {
-  border-collapse: collapse;
-  border:1px solid #eee;
-  width: 100%;
-}
-
-th, td {
-  text-align: left;
-  padding: 5px 5px;
-}
-
-tr:nth-child(even) {background-color: #F1F4FF;}
-
 body{margin:0px}
 .nduwur {padding: 10px 10px;background-color: #353554;color: white;position:relative;overflow:hidden;text-align:left;font-size:12px;}
 .nduwur .closebtn {margin-right: 10px;color: white;font-weight: ;float: left;font-size: 15px;cursor: pointer;
