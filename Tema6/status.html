@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+<title>Terhubung</title>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script language="JavaScript">
+$(if advert-pending == 'yes')
+    var popup = '';
+    function focusAdvert() {
+  if (window.focus) popup.focus();
+    }
+    function openAdvert() {
+  popup = open('$(link-advert)', 'hotspot_advert', '');
+  setTimeout("focusAdvert()", 1000);
+    }
+$(endif)
+    function openLogout() {
+  if (window.name != 'hotspot_status') return true;
+        open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+  window.close();
+  return false;
+    }
+</script>
+</head>
+<body $(if advert-pending == 'yes') onLoad="openAdvert()" $(endif)>
+<div class="main-wrapper">
+<div class="page-content pt-0 pb-0">
+<div class="booking-success-col">
+
+<div class="booking-middle">
+<div class="booking-middle-inner">
+<span class="tick-icon"><img src="apay/img/icon/status/success.png" alt=""></span>
+<div class="success-full-text">
+<h3>Anda telah terhubung!</h3>
+<p>Detail Voucher <br><span><b>$(username)</b></span><br> masa berlaku <span><br>$(session-time-left)</span></p>
+</div>
+<div class="view-btn-col"><a href="$(link-logout)" name="logout" onSubmit="return openLogout()" class="btn">Putuskan Sambungan</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
